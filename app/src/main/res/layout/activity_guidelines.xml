@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quakeguide.user.cit_uquakeguide.guidelines"
+    android:background="@drawable/bg2">
+
+    <Button
+        android:id="@+id/beforeBtn"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/before_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/duringBtn"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/during_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/beforeBtn"
+        app:layout_constraintStart_toEndOf="@+id/beforeBtn" />
+
+    <Button
+        android:id="@+id/afterBtn"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/after_button"
+        app:layout_constraintBaseline_toBaselineOf="@+id/duringBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/duringBtn" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

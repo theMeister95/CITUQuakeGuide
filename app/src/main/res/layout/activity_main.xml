@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quake_logo"
+    tools:context="com.quakeguide.user.cit_uquakeguide.MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/contacts_icon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/alarmBtn"
+        app:layout_constraintStart_toEndOf="@+id/alarmBtn" />
+
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/alarm"
+        app:layout_constraintBaseline_toBaselineOf="@+id/smsBtn"
+        app:layout_constraintStart_toEndOf="@+id/smsBtn" />
+
+    <Button
+        android:id="@+id/smsBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/envelope"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pathwayBtn"
+        app:layout_constraintStart_toEndOf="@+id/pathwayBtn" />
+
+    <Button
+        android:id="@+id/pathwayBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/pathway"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gameBtn"
+        app:layout_constraintStart_toEndOf="@+id/gameBtn" />
+
+    <Button
+        android:id="@+id/gameBtn"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/game"
+        app:layout_constraintBaseline_toBaselineOf="@+id/guidelinesBtn"
+        app:layout_constraintStart_toEndOf="@+id/guidelinesBtn" />
+
+    <Button
+        android:id="@+id/guidelinesBtn"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/enve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
